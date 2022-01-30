@@ -1,6 +1,6 @@
 extends Node2D
 
-var rotation_speed = 0.1
+var rotation_speed = 0.01
 var current_rotation_speed = rotation_speed
 
 

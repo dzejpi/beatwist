@@ -25,6 +25,9 @@ func _process(delta):
 		match(current_beat_step):
 			1: 
 				# methods here
+				change_spawner_node_speed(0.1)
+				change_background_speed(-0.1)
+				
 				fire_ready = false
 			2:
 				# methods here
@@ -33,10 +36,10 @@ func _process(delta):
 				# methods here
 				fire_ready = false
 			4:
-				# methods here
 				fire_ready = false
 			5: 
-				# methods here
+				change_spawner_node_speed(0.25)
+				change_background_speed(-0.25)
 				fire_ready = false
 			6:
 				# methods here
@@ -54,13 +57,15 @@ func _process(delta):
 				# methods here
 				fire_ready = false
 			11: 
-				# methods here
+				change_spawner_node_speed(0.50)
+				change_background_speed(-0.50)
 				fire_ready = false
 			12:
 				# methods here
 				fire_ready = false
 			13: 
-				# methods here
+				change_spawner_node_speed(0.65)
+				change_background_speed(-0.65)
 				fire_ready = false
 			14:
 				# methods here
@@ -81,7 +86,8 @@ func _process(delta):
 				# methods here
 				fire_ready = false
 			20:
-				# methods here
+				change_spawner_node_speed(0.75)
+				change_background_speed(-0.75)
 				fire_ready = false
 			21: 
 				# methods here
@@ -96,7 +102,9 @@ func _process(delta):
 				# methods here
 				fire_ready = false
 			25: 
-				# methods here
+				change_spawner_node_speed(1.0)
+				change_background_speed(-1.0)
+				
 				fire_ready = false
 			26:
 				# methods here
@@ -108,7 +116,8 @@ func _process(delta):
 				# methods here
 				fire_ready = false
 			29: 
-				# methods here
+				change_spawner_node_speed(-1.25)
+				change_background_speed(1.25)
 				fire_ready = false
 			30:
 				# methods here
@@ -141,7 +150,9 @@ func _process(delta):
 				# methods here
 				fire_ready = false
 			40:
-				# methods here
+				change_spawner_node_speed(-1.0)
+				change_background_speed(1.0)
+				
 				fire_ready = false
 			41: 
 				# methods here
@@ -216,7 +227,9 @@ func _process(delta):
 				# methods here
 				fire_ready = false
 			65: 
-				# methods here
+				change_spawner_node_speed(-2.0)
+				change_background_speed(2.0)
+				
 				fire_ready = false
 			66:
 				# methods here
@@ -246,7 +259,9 @@ func _process(delta):
 				# methods here
 				fire_ready = false
 			75: 
-				# methods here
+				change_spawner_node_speed(-1.0)
+				change_background_speed(1.0)
+				
 				fire_ready = false
 			76:
 				# methods here
@@ -261,7 +276,8 @@ func _process(delta):
 				# methods here
 				fire_ready = false
 			80:
-				# methods here
+				change_spawner_node_speed(-0.5)
+				change_background_speed(0.5)
 				fire_ready = false
 			81: 
 				# methods here
@@ -318,7 +334,9 @@ func _process(delta):
 				# methods here
 				fire_ready = false
 			99: 
-				# methods here
+				change_spawner_node_speed(0.5)
+				change_background_speed(-0.5)
+				
 				fire_ready = false
 			100:
 				# methods here
@@ -369,7 +387,9 @@ func _process(delta):
 				# methods here
 				fire_ready = false
 			116:
-				# methods here
+				change_spawner_node_speed(0.75)
+				change_background_speed(-0.75)
+				
 				fire_ready = false
 			117: 
 				# methods here
