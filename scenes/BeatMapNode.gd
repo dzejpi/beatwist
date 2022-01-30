@@ -5,6 +5,9 @@ onready var second_node = $SpawnersNode/SpawnerNodeTwo
 onready var third_node = $SpawnersNode/SpawnerNodeThree
 onready var fourth_node = $SpawnersNode/SpawnerNodeFour
 
+onready var background_node = $BackgroundNode
+onready var spawners_node = $SpawnersNode
+
 var current_beat_step = 0
 var fire_ready = true
 
@@ -512,3 +515,8 @@ func spawn_third_projectile(node_number):
 		4: 
 			pass
 	
+func change_background_speed(new_speed):
+	background_node.rotation_speed = new_speed
+
+func change_spawner_node_speed(new_speed):
+	spawners_node.rotation_speed = new_speed

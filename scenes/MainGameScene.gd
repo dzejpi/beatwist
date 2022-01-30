@@ -5,12 +5,8 @@ onready var spawners_node = $BeatMapNode/SpawnersNode
 
 
 func _ready():
-	change_background_speed(0)
+	pass
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-func change_background_speed(new_speed):
-	background_node.rotation_speed = new_speed
+func _process(delta):
+	pass
