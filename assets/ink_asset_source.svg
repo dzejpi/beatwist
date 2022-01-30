@@ -50,7 +50,7 @@
      inkscape:label="Background"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:none;opacity:1"
+     style="display:inline;opacity:1"
      sodipodi:insensitive="true">
     <rect
        style="mix-blend-mode:normal;fill:#73729a;stroke:none;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -177,7 +177,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Main Circle"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <circle
        style="fill:#ec9697;stroke:#fafafa;stroke-width:1.323;stroke-linejoin:round"
@@ -202,7 +202,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer6"
-     inkscape:label="Texts">
+     inkscape:label="Texts"
+     sodipodi:insensitive="true">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Kenney Future Narrow';-inkscape-font-specification:'Kenney Future Narrow';text-align:center;text-anchor:middle;fill:#73729a;stroke:#ceced8;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -216,13 +217,49 @@
          x="199.01047"
          y="204.47113"
          style="font-size:14.1111px;fill:#ffffff">click to start!</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Kenney Future Narrow';-inkscape-font-specification:'Kenney Future Narrow';text-align:center;text-anchor:middle;fill:#73729a;stroke:#ceced8;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       x="114.31421"
+       y="295.03781"
+       id="text1071-0"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         x="114.31421"
+         y="295.03781"
+         style="font-size:14.1111px;fill:#ffffff;stroke-width:1.32292"
+         id="tspan1091">Failed!</tspan><tspan
+         sodipodi:role="line"
+         x="114.31421"
+         y="312.6767"
+         style="font-size:14.1111px;fill:#ffffff;stroke-width:1.32292"
+         id="tspan1095">click to Restart!</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Kenney Future Narrow';-inkscape-font-specification:'Kenney Future Narrow';text-align:center;text-anchor:middle;fill:#73729a;stroke:#ceced8;stroke-width:1.32292;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       x="150.71857"
+       y="70.219208"
+       id="text1071-0-3"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         x="150.71857"
+         y="70.219208"
+         style="font-size:14.1111px;fill:#ffffff;stroke-width:1.32292"
+         id="tspan1120">You won!</tspan><tspan
+         sodipodi:role="line"
+         x="150.71857"
+         y="87.858086"
+         style="font-size:14.1111px;fill:#ffffff;stroke-width:1.32292"
+         id="tspan1124">Congratulations!</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Spawner"
      sodipodi:insensitive="true"
-     style="display:none">
+     style="display:inline">
     <rect
        style="fill:#b3dec3;stroke:#fafafa;stroke-width:1.323;stroke-linejoin:round"
        id="rect908"
@@ -237,7 +274,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="Enemies"
-     style="display:none;opacity:1"
+     style="display:inline;opacity:1"
      sodipodi:insensitive="true">
     <path
        sodipodi:type="star"
@@ -273,13 +310,15 @@
        width="25.135414"
        height="2.6458299"
        x="60.484482"
-       y="177.60854" />
+       y="177.60854"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Player"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <circle
        style="fill:#d8affe;stroke:#fafafa;stroke-width:1.323;stroke-linejoin:round"
