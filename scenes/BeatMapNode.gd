@@ -8,6 +8,8 @@ onready var fourth_node = $SpawnersNode/SpawnerNodeFour
 onready var background_node = $BackgroundNode
 onready var spawners_node = $SpawnersNode
 
+onready var test_label = $TestLabel
+
 var current_beat_step = 0
 var fire_ready = true
 
@@ -16,6 +18,8 @@ func _ready():
 
 # Massive switch
 func _process(delta):
+	
+	test_label.text = " Current beat number: " + String(current_beat_step)
 	
 	if fire_ready:
 		match(current_beat_step):

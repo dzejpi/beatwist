@@ -5,12 +5,10 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 45, 3 )
 
-[node name="BulletOneNode" type="Node2D"]
+[node name="BulletThreeKinematicBody" type="KinematicBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
-
-[node name="Area2D" type="Area2D" parent="Sprite"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/Area2D"]
-shape = SubResource( 1 )
