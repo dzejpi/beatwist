@@ -1,47 +1,61 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/spr_spawner.png" type="Texture" id=1]
 [ext_resource path="res://assets/spr_background.png" type="Texture" id=2]
 [ext_resource path="res://assets/spr_main_circle.png" type="Texture" id=3]
 [ext_resource path="res://PlayerNode.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/BackgroundNode.gd" type="Script" id=5]
+[ext_resource path="res://scenes/SpawnersNode.gd" type="Script" id=6]
+[ext_resource path="res://scenes/MainGameScene.gd" type="Script" id=7]
+[ext_resource path="res://scenes/BeatMapNode.gd" type="Script" id=8]
 
 [node name="MainGameScene" type="Node2D"]
 position = Vector2( 640, 360 )
+script = ExtResource( 7 )
 
-[node name="BackgroundNode" type="Node2D" parent="."]
+[node name="BeatMapNode" type="Node" parent="."]
+script = ExtResource( 8 )
 
-[node name="BackgroundSprite" type="Sprite" parent="BackgroundNode"]
+[node name="BackgroundNode" type="Node2D" parent="BeatMapNode"]
+position = Vector2( 640, 360 )
+script = ExtResource( 5 )
+
+[node name="BackgroundSprite" type="Sprite" parent="BeatMapNode/BackgroundNode"]
 texture = ExtResource( 2 )
 
-[node name="MainCircleNode" type="Node2D" parent="."]
+[node name="MainCircleNode" type="Node2D" parent="BeatMapNode"]
+position = Vector2( 640, 360 )
 
-[node name="MainCircleSprite" type="Sprite" parent="MainCircleNode"]
+[node name="MainCircleSprite" type="Sprite" parent="BeatMapNode/MainCircleNode"]
 texture = ExtResource( 3 )
 
-[node name="SpawnersNode" type="Node2D" parent="."]
+[node name="SpawnersNode" type="Node2D" parent="BeatMapNode"]
+position = Vector2( 640, 360 )
+script = ExtResource( 6 )
 
-[node name="SpawnerNodeOne" type="Node2D" parent="SpawnersNode"]
+[node name="SpawnerNodeOne" type="Node2D" parent="BeatMapNode/SpawnersNode"]
 
-[node name="SpawnerSpriteOne" type="Sprite" parent="SpawnersNode/SpawnerNodeOne"]
+[node name="SpawnerSpriteOne" type="Sprite" parent="BeatMapNode/SpawnersNode/SpawnerNodeOne"]
 position = Vector2( 0, -300 )
 texture = ExtResource( 1 )
 
-[node name="SpawnerNodeTwo" type="Node2D" parent="SpawnersNode"]
+[node name="SpawnerNodeTwo" type="Node2D" parent="BeatMapNode/SpawnersNode"]
 
-[node name="SpawnerSpriteTwo" type="Sprite" parent="SpawnersNode/SpawnerNodeTwo"]
+[node name="SpawnerSpriteTwo" type="Sprite" parent="BeatMapNode/SpawnersNode/SpawnerNodeTwo"]
 position = Vector2( 0, 300 )
 texture = ExtResource( 1 )
 
-[node name="SpawnerNodeThree" type="Node2D" parent="SpawnersNode"]
+[node name="SpawnerNodeThree" type="Node2D" parent="BeatMapNode/SpawnersNode"]
 
-[node name="SpawnerSpriteThree" type="Sprite" parent="SpawnersNode/SpawnerNodeThree"]
+[node name="SpawnerSpriteThree" type="Sprite" parent="BeatMapNode/SpawnersNode/SpawnerNodeThree"]
 position = Vector2( 300, 0 )
 texture = ExtResource( 1 )
 
-[node name="SpawnerNodeFour" type="Node2D" parent="SpawnersNode"]
+[node name="SpawnerNodeFour" type="Node2D" parent="BeatMapNode/SpawnersNode"]
 
-[node name="SpawnerSpriteFour" type="Sprite" parent="SpawnersNode/SpawnerNodeFour"]
+[node name="SpawnerSpriteFour" type="Sprite" parent="BeatMapNode/SpawnersNode/SpawnerNodeFour"]
 position = Vector2( -300, 0 )
 texture = ExtResource( 1 )
 
-[node name="PlayerNode" parent="." instance=ExtResource( 4 )]
+[node name="PlayerNode" parent="BeatMapNode" instance=ExtResource( 4 )]
+position = Vector2( 640, 360 )
