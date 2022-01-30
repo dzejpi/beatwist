@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/music_alexander_nakarada_beat_thee.mp3-f515a66eda5d8886677343c1152abbe3.mp3str"
+
+[deps]
+
+source_file="res://sfx/music_alexander_nakarada_beat_thee.mp3"
+dest_files=[ "res://.import/music_alexander_nakarada_beat_thee.mp3-f515a66eda5d8886677343c1152abbe3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

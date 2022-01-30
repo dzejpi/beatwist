@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/music_ogg_alexander_nakarada_beat_thee.ogg-1659bab4b0d1e8d398699d90b0900763.oggstr"
+
+[deps]
+
+source_file="res://sfx/music_ogg_alexander_nakarada_beat_thee.ogg"
+dest_files=[ "res://.import/music_ogg_alexander_nakarada_beat_thee.ogg-1659bab4b0d1e8d398699d90b0900763.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
