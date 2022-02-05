@@ -9,4 +9,5 @@ func _ready():
 
 
 func _process(delta):
-	velocity = move_and_slide(velocity)
+	#velocity = move_and_slide(velocity)
+	pass

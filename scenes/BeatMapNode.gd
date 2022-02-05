@@ -13,6 +13,10 @@ onready var test_label = $TestLabel
 var current_beat_step = 0
 var fire_ready = true
 
+var bullet_one = preload("res://BulletOneNode.tscn")
+var bullet_two = preload("res://BulletTwoNode.tscn")
+var bullet_three = preload("res://BulletThreeNode.tscn")
+
 func _ready():
 	pass # Replace with function body.
 
@@ -24,63 +28,64 @@ func _process(delta):
 	if fire_ready:
 		match(current_beat_step):
 			1: 
-				# methods here
 				change_spawner_node_speed(0.1)
 				change_background_speed(-0.1)
 				
 				fire_ready = false
 			2:
-				# methods here
+				spawn_first_projectile(1)
 				fire_ready = false
 			3: 
 				# methods here
 				fire_ready = false
 			4:
+				spawn_first_projectile(3)
 				fire_ready = false
 			5: 
 				change_spawner_node_speed(0.25)
 				change_background_speed(-0.25)
 				fire_ready = false
 			6:
-				# methods here
+				spawn_first_projectile(2)
 				fire_ready = false
 			7: 
-				# methods here
+				#methods here
 				fire_ready = false
 			8:
-				# methods here
+				spawn_first_projectile(4)
 				fire_ready = false
 			9: 
 				# methods here
 				fire_ready = false
 			10:
-				# methods here
+				spawn_first_projectile(1)
 				fire_ready = false
 			11: 
 				change_spawner_node_speed(0.50)
 				change_background_speed(-0.50)
 				fire_ready = false
 			12:
-				# methods here
+				spawn_first_projectile(3)
 				fire_ready = false
 			13: 
 				change_spawner_node_speed(0.65)
 				change_background_speed(-0.65)
 				fire_ready = false
 			14:
-				# methods here
+				spawn_first_projectile(2)
 				fire_ready = false
 			15: 
 				# methods here
 				fire_ready = false
 			16:
-				# methods here
+				spawn_first_projectile(4)
 				fire_ready = false
 			17: 
 				# methods here
 				fire_ready = false
 			18:
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
 				fire_ready = false
 			19: 
 				# methods here
@@ -88,18 +93,20 @@ func _process(delta):
 			20:
 				change_spawner_node_speed(0.75)
 				change_background_speed(-0.75)
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			21: 
 				# methods here
 				fire_ready = false
 			22:
-				# methods here
+				spawn_first_projectile(1)
 				fire_ready = false
 			23: 
 				# methods here
 				fire_ready = false
 			24:
-				# methods here
+				spawn_first_projectile(3)
 				fire_ready = false
 			25: 
 				change_spawner_node_speed(1.0)
@@ -107,82 +114,127 @@ func _process(delta):
 				
 				fire_ready = false
 			26:
-				# methods here
+				spawn_first_projectile(2)
 				fire_ready = false
 			27: 
 				# methods here
 				fire_ready = false
 			28:
-				# methods here
+				spawn_first_projectile(4)
 				fire_ready = false
 			29: 
 				change_spawner_node_speed(-1.25)
 				change_background_speed(1.25)
 				fire_ready = false
 			30:
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			31: 
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			32:
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			33: 
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
 				fire_ready = false
 			34:
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			35: 
-				# methods here
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			36:
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			37: 
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
 				fire_ready = false
 			38:
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			39: 
-				# methods here
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			40:
 				change_spawner_node_speed(-1.0)
 				change_background_speed(1.0)
 				
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			41: 
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
 				fire_ready = false
 			42:
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			43: 
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
 				fire_ready = false
 			44:
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			45: 
-				# methods here
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			46:
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			47: 
-				# methods here
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			48:
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			49: 
 				# methods here
 				fire_ready = false
 			50:
-				# methods here
+				spawn_first_projectile(1)
+				spawn_first_projectile(2)
+				spawn_first_projectile(3)
+				spawn_first_projectile(4)
 				fire_ready = false
 			51: 
 				# methods here
@@ -507,15 +559,33 @@ func fire_with_node(node_number, enemy_number):
 			pass
 
 func spawn_first_projectile(node_number):
+	#match(node_number):
+	#	1:
+	#		var a = bullet_one.instance()
+	#		a.start(first_node.global_position, spawners_node.rotation_degrees + first_node.rotation_degrees)
+	#		add_child(a)
+	#	2:
+	#		var a = bullet_one.instance()
+	#		a.start(second_node.global_position, spawners_node.rotation_degrees + second_node.rotation_degrees)
+	#		add_child(a)
+	#	3:
+	#		var a = bullet_one.instance()
+	#		a.start(third_node.global_position, spawners_node.rotation_degrees + third_node.rotation_degrees)
+	#		add_child(a)
+	#	4: 
+	#		var a = bullet_one.instance()
+	#		a.start(fourth_node.global_position, spawners_node.rotation_degrees + fourth_node.rotation_degrees)
+	#		add_child(a)
+		
 	match(node_number):
 		1:
-			pass
+			spawners_node.spawn_first_projectile(1)
 		2:
-			pass
+			spawners_node.spawn_first_projectile(2)
 		3:
-			pass
+			spawners_node.spawn_first_projectile(3)
 		4: 
-			pass
+			spawners_node.spawn_first_projectile(4)
 	
 func spawn_second_projectile(node_number):
 	match(node_number):
